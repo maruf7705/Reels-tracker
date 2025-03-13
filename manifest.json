@@ -1,0 +1,23 @@
+{
+    "manifest_version": 3,
+    "name": "Reels Tracker",
+    "version": "2.0",
+    "description": "Track daily Reels consumption across Instagram, YouTube, and TikTok with a sleek, modern interface.",
+    "permissions": ["storage", "activeTab", "scripting"],
+    "host_permissions": [
+      "https://www.instagram.com/reels/*",
+      "https://www.youtube.com/shorts/*",
+      "https://www.facebook.com/reels/*"
+    ],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "icons/icon16.png",
+        "48": "icons/icon48.png",
+        "128": "icons/icon128.png"
+      }
+    }
+  }

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reels Tracker</title>
+  <link rel="stylesheet" href="popup.css">
+  <script src="popup.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <h1>📅 Reels Tracker</h1>
+    <div class="today-stats">
+      <p><strong>Today's Count:</strong></p>
+      <div class="count-circle" id="today-count">0</div>
+    </div>
+    <div class="time-spent">
+      <h2>⏰ Time Spent Today</h2>
+      <ul id="time-spent-list"></ul>
+    </div>
+    <div class="platform-stats">
+      <h2>📊 Platform Stats</h2>
+      <ul id="platform-stats-list">
+        <li>Instagram: <span id="instagram-count">0</span> reels, <span id="instagram-time">0</span> minutes</li>
+        <li>Facebook: <span id="facebook-count">0</span> reels, <span id="facebook-time">0</span> minutes</li>
+        <li>YouTube: <span id="youtube-count">0</span> reels, <span id="youtube-time">0</span> minutes</li>
+      </ul>
+    </div>
+    <div class="calendar-container">
+      <h2>🗓️ Calendar View</h2>
+      <div class="calendar" id="calendar"></div>
+    </div>
+    <button id="reset-data">Reset All Data</button>
+  </div>
+</body>
+</html>

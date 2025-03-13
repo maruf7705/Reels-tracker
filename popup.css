@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: white;
+  text-align: center;
+  height: 500px; /* Fixed height */
+  width: 400px; /* Fixed width */
+  overflow-y: auto; /* Enable scrolling if content exceeds height */
+  padding: 20px;
+}
+
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  padding: 20px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  height: 100%; /* Take full height of body */
+  overflow-y: auto; /* Enable scrolling inside the container */
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.today-stats {
+  margin-bottom: 20px;
+}
+
+.count-circle {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: white;
+  color: #2575fc;
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.time-spent, .platform-stats {
+  margin-top: 20px;
+}
+
+.calendar-container {
+  margin-top: 20px;
+}
+
+.calendar {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+  margin-top: 10px;
+}
+
+.day {
+  padding: 10px;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.day:hover {
+  transform: scale(1.1);
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.highlight {
+  background: #2575fc;
+  color: white;
+  font-weight: bold;
+}
+
+#reset-data {
+  background: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+#reset-data:hover {
+  background: #cc0000;
+}
