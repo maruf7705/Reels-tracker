@@ -56,6 +56,7 @@ h1 {
 
 .calendar-container {
   margin-top: 20px;
+  display: none; /* Hide calendar container by default */
 }
 
 .calendar {

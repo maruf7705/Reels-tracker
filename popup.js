@@ -10,6 +10,8 @@ document.addEventListener('DOMContentLoaded', async () => {
   const resetButton = document.getElementById('reset-data');
   const calendar = document.getElementById('calendar');
   const timeSpentList = document.getElementById('time-spent-list');
+  const toggleCalendarButton = document.getElementById('toggle-calendar');
+  const calendarContainer = document.getElementById('calendar-container');
 
   calendar.innerHTML = "";
   timeSpentList.innerHTML = "";
@@ -67,6 +69,17 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     calendar.appendChild(dayCell);
   }
+
+  // Toggle calendar visibility
+  toggleCalendarButton.addEventListener("click", () => {
+    if (calendarContainer.style.display === "none") {
+      calendarContainer.style.display = "block";
+      toggleCalendarButton.textContent = "Hide Calendar";
+    } else {
+      calendarContainer.style.display = "none";
+      toggleCalendarButton.textContent = "Show Calendar";
+    }
+  });
 
   // Reset button functionality
   resetButton.addEventListener("click", async () => {
