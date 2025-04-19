@@ -1,3 +1,4 @@
+$$ UPDATE COMEING
 # Reels Tracker
 
 Reels Tracker is a Chrome extension that helps you monitor how many reels you've watched and how much time you've spent on social media platforms like Instagram, YouTube, and Facebook. It provides a sleek, modern interface to track your daily consumption and view statistics.
